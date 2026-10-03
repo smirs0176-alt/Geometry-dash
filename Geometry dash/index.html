@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Геометрия Даш</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Геометрия Даш</h1>
+
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    
+    <div class="ui-layer">
+      <div class="stats">
+        <div id="scoreText">Счет: 0m</div>
+        <div id="bestText">Рекорд: 0m</div>
+      </div>
+      <div class="controls-hint">ПРОБЕЛ / КЛИК / СТРЕЛКА ВВЕРХ — Прыжок</div>
+    </div>
+
+    <div id="startMenu" class="overlay">
+      <h2>Геометрия Даш</h2>
+      <p>Преодолей все препятствия!</p>
+      <button id="startBtn" class="btn">ИГРАТЬ</button>
+    </div>
+
+    <div id="gameOverMenu" class="overlay hidden">
+      <h2 class="title-crash">КРАШ!</h2>
+      <p id="finalScore"></p>
+      <button id="restartBtn" class="btn">ПОПРОБОВАТЬ СНОВА</button>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/Obstacle.js"></script>
+  <script src="js/Environment.js"></script>
+  <script src="js/UI.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
